@@ -1,13 +1,17 @@
 {
-  "name": "Quick Image Save",
+  "name": "Image Quicksave",
    "background" : { "scripts": ["background.js"] },
    "description": "Add a context menu item to save an image into a pre-specified folder.",
    "icons": {
       "16": "icon16.png",
       "48": "icon48.png"
    },
-   "minimum_chrome_version": "6",
-   "permissions": [ "contextMenus", "downloads" ],
+   "options_ui": {
+      "page": "options.html",
+      "chrome_style": true
+    },
+     "minimum_chrome_version": "40",
+   "permissions": [ "contextMenus", "downloads", "storage" ],
    "version": "1.0",
    "manifest_version": 2
 }
